@@ -79,7 +79,4 @@ Before the build & sim, we need to setup the environment first.
 This is free and unencumbered public domain software. For more information,
 see http://unlicense.org/ or the accompanying UNLICENSE file.
 
-Files under verilog/superkdf9/ have their own license (Lattice Semi-
-conductor Corporation Open Source License Agreement).
-
 Some files may have their own license disclaim by the author.
