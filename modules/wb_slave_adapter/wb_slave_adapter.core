@@ -1,0 +1,31 @@
+CAPI=2:
+
+name: ::wb_slave_adapter:0
+
+filesets:
+  rtl:
+    files:
+      - rtl/verilog/wb_slave_adapter.v
+    file_type: verilogSource
+
+  tb:
+    files:
+      - bench/wb_slave_adapter_tb.v: {file_type : verilogSource}
+    depend:
+      - vlog_tb_utils
+      - wb_bfm_mod
+
+targets:
+  default:
+    filesets: [rtl]
+  sim:
+    default_tool: icarus
+    filesets: [rtl, tb]
+    tools:
+      modelsim:
+        vlog_options: [-timescale=1ns/1ns]
+      xsim:
+        xelab_options: [--timescale=1ns/1ns]
+      icarus:
+        iverilog_options : []
+    toplevel: [wb_slave_adapter_tb]

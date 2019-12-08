@@ -1,0 +1,71 @@
+CAPI=2:
+name : ::atta:0
+
+filesets:
+  core_files:
+    files:
+      - top/atta/wb_intercon.v
+      - top/atta/wb_intercon.vh:         {is_include_file : true}
+      - top/atta/atta_system.v
+      - firmware/MMX.hex:                    {file_type: user, copyto: firmware/MMX.hex}
+    file_type: verilogSource
+    depend:
+      - ">=wb_intercon-1.0"
+      - ">=wb_ram-1.0"
+      - picorv32
+      - wb_leds
+
+  top_files:
+    files:
+      - platform/xilinx/series7/sys_clk.v
+      - top/atta/atta_top.v
+    file_type : verilogSource
+
+  tb:
+    files:
+        - testbench/atta/atta_tb.v
+    file_type : verilogSource
+
+  constraints :
+    files:
+      - top/atta/atta.xdc:      {file_type: xdc}
+
+targets:
+  synth: &synth
+    default_tool : vivado
+    filesets   :
+      - core_files
+      - top_files
+      - constraints
+    tools:
+      vivado:
+        part: xc7z020clg484-1
+        hw_device: xc7z020_1
+    toplevel: [atta_top]
+
+  sim:
+    default_tool: icarus
+    filesets: [core_files, tb]
+    parameters: [firmware, noerror, trace, vcd]
+    toplevel: [atta_tb]
+
+  default:
+    <<: *synth
+
+parameters:
+  firmware:
+    datatype  :  file
+    paramtype : plusarg
+  noerror:
+    datatype  :  bool
+    paramtype : plusarg
+  trace:
+    datatype  : bool
+    paramtype : plusarg
+  vcd:
+    datatype  : bool
+    paramtype : plusarg
+  verbose:
+    datatype : bool
+    paramtype : plusarg
+

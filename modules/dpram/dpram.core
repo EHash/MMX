@@ -1,0 +1,19 @@
+CAPI=2:
+
+name: ::dpram:0
+
+filesets:
+  rtl:
+    files:
+      - rtl/verilog/dpram.v
+    file_type: verilogSource
+
+targets:
+  default:
+    filesets: [rtl]
+
+#provider:
+#  name    : github
+#  user    : lerwys
+#  repo    : dpram
+# version : v0.0

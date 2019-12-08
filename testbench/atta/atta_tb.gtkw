@@ -1,0 +1,131 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Tue Aug  7 19:38:36 2018
+[*]
+[timestart] 0
+[size] 1678 1000
+[pos] -1 -1
+*-22.000000 1135000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] atta_tb.
+[treeopen] atta_tb.dut.
+[treeopen] atta_tb.dut.wb_intercon0.
+[sst_width] 215
+[signals_width] 486
+[sst_expanded] 1
+[sst_vpaned_height] 377
+@800200
+-wb_ma_picorv32
+@28
+atta_tb.dut.cmp_picorv32.wb_clk_i
+atta_tb.dut.cmp_picorv32.wb_rst_i
+atta_tb.dut.cmp_picorv32.wbm_cyc_o
+atta_tb.dut.cmp_picorv32.wbm_stb_o
+atta_tb.dut.cmp_picorv32.wbm_we_o
+@22
+atta_tb.dut.cmp_picorv32.wbm_sel_o[3:0]
+atta_tb.dut.cmp_picorv32.wbm_dat_i[31:0]
+atta_tb.dut.cmp_picorv32.wbm_adr_o[31:0]
+atta_tb.dut.cmp_picorv32.wbm_dat_o[31:0]
+@28
+atta_tb.dut.cmp_picorv32.wbm_ack_i
+atta_tb.dut.cmp_picorv32.trap
+@1000200
+-wb_ma_picorv32
+@c00200
+-wb_intercon
+@28
+atta_tb.dut.wb_intercon0.wb_clk_i
+atta_tb.dut.wb_intercon0.wb_rst_i
+atta_tb.dut.wb_intercon0.wb_picorv32_cyc_i
+atta_tb.dut.wb_intercon0.wb_picorv32_stb_i
+atta_tb.dut.wb_intercon0.wb_picorv32_we_i
+@22
+atta_tb.dut.wb_intercon0.wb_picorv32_sel_i[3:0]
+atta_tb.dut.wb_intercon0.wb_picorv32_adr_i[31:0]
+@28
+atta_tb.dut.wb_intercon0.wb_picorv32_bte_i[1:0]
+atta_tb.dut.wb_intercon0.wb_picorv32_cti_i[2:0]
+@22
+atta_tb.dut.wb_intercon0.wb_picorv32_dat_i[31:0]
+atta_tb.dut.wb_intercon0.wb_picorv32_dat_o[31:0]
+@28
+atta_tb.dut.wb_intercon0.wb_picorv32_ack_o
+atta_tb.dut.wb_intercon0.wb_picorv32_err_o
+atta_tb.dut.wb_intercon0.wb_leds_cyc_o
+atta_tb.dut.wb_intercon0.wb_leds_stb_o
+atta_tb.dut.wb_intercon0.wb_leds_we_o
+@22
+atta_tb.dut.wb_intercon0.wb_leds_sel_o[3:0]
+@28
+atta_tb.dut.wb_intercon0.wb_leds_ack_i
+@22
+atta_tb.dut.wb_intercon0.wb_leds_adr_o[31:0]
+@28
+atta_tb.dut.wb_intercon0.wb_leds_bte_o[1:0]
+atta_tb.dut.wb_intercon0.wb_leds_cti_o[2:0]
+@22
+atta_tb.dut.wb_intercon0.wb_leds_dat_i[31:0]
+atta_tb.dut.wb_intercon0.wb_leds_dat_o[31:0]
+@28
+atta_tb.dut.wb_intercon0.wb_leds_err_i
+atta_tb.dut.wb_intercon0.wb_leds_rty_i
+atta_tb.dut.wb_intercon0.wb_ram_ack_i
+@22
+atta_tb.dut.wb_intercon0.wb_ram_adr_o[31:0]
+@28
+atta_tb.dut.wb_intercon0.wb_ram_bte_o[1:0]
+atta_tb.dut.wb_intercon0.wb_ram_cti_o[2:0]
+atta_tb.dut.wb_intercon0.wb_ram_cyc_o
+@22
+atta_tb.dut.wb_intercon0.wb_ram_dat_i[31:0]
+atta_tb.dut.wb_intercon0.wb_ram_dat_o[31:0]
+@28
+atta_tb.dut.wb_intercon0.wb_ram_err_i
+atta_tb.dut.wb_intercon0.wb_ram_rty_i
+@22
+atta_tb.dut.wb_intercon0.wb_ram_sel_o[3:0]
+@28
+atta_tb.dut.wb_intercon0.wb_ram_stb_o
+atta_tb.dut.wb_intercon0.wb_ram_we_o
+@1401200
+-wb_intercon
+@800200
+-wb_leds
+@28
+atta_tb.dut.cmp_wb_leds.clk_i
+atta_tb.dut.cmp_wb_leds.rst_n_i
+atta_tb.dut.cmp_wb_leds.wb_cyc_i
+atta_tb.dut.cmp_wb_leds.wb_stb_i
+atta_tb.dut.cmp_wb_leds.wb_we_i
+@22
+atta_tb.dut.cmp_wb_leds.wb_sel_i[3:0]
+atta_tb.dut.cmp_wb_leds.wb_adr_i[31:0]
+atta_tb.dut.cmp_wb_leds.wb_dat_i[31:0]
+atta_tb.dut.cmp_wb_leds.wb_dat_o[31:0]
+@28
+atta_tb.dut.cmp_wb_leds.wb_ack_o
+atta_tb.dut.cmp_wb_leds.wb_stall_o
+@23
+atta_tb.dut.cmp_wb_leds.leds_o[31:0]
+@1000200
+-wb_leds
+@800200
+-wb_ram
+@28
+atta_tb.dut.cmp_wb_ram.wb_clk_i
+atta_tb.dut.cmp_wb_ram.wb_rst_i
+atta_tb.dut.cmp_wb_ram.wb_cyc_i
+atta_tb.dut.cmp_wb_ram.wb_stb_i
+atta_tb.dut.cmp_wb_ram.wb_we_i
+@22
+atta_tb.dut.cmp_wb_ram.wb_sel_i[3:0]
+atta_tb.dut.cmp_wb_ram.wb_adr_i[15:0]
+atta_tb.dut.cmp_wb_ram.wb_dat_i[31:0]
+atta_tb.dut.cmp_wb_ram.wb_dat_o[31:0]
+@28
+atta_tb.dut.cmp_wb_ram.wb_err_o
+atta_tb.dut.cmp_wb_ram.wb_ack_o
+@1000200
+-wb_ram
+[pattern_trace] 1
+[pattern_trace] 0

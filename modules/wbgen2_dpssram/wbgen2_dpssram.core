@@ -1,0 +1,21 @@
+CAPI=2:
+
+name: ::wbgen2_dpssram:0
+
+filesets:
+  rtl:
+    files:
+      - rtl/verilog/wbgen2_dpssram.v
+    file_type: verilogSource
+    depend:
+      - dpram
+
+targets:
+  default:
+    filesets: [rtl]
+
+#provider:
+#  name    : github
+#  user    : lerwys
+#  repo    : wbgen2_dpssram
+# version : v0.0
