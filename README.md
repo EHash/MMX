@@ -61,10 +61,18 @@ Before the build & sim, we need to setup the environment first.
 ```
 
 ### Hardware support
+
 * ZedBoard
 
 ### Discussion
+
 * Telegram: https://t.me/EHashPublic
+
+### TODO
+
+* Add toolchain compile support
+* Add uart debug support
+* Add btc core support
 
 ### License
 
